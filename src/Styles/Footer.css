@@ -1,0 +1,29 @@
+.footer{
+    width: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px;
+}
+.f-content{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #fff;
+}
+.info{
+    text-align: center;
+    padding: 10px;
+}
+.info span{
+    margin-left: 10px;
+}
+@media screen and (max-width:1000px) {
+    .f-content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        transition: 0.5 ease;
+    }
+}
